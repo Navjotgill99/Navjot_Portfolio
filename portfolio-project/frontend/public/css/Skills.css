@@ -1,0 +1,89 @@
+/* Skills.css */
+.skills {
+    background-color: #000000; /* Black background */
+    padding: 2rem 0; /* Add some vertical padding */
+}
+
+.skills h2 {
+    font-size: 3rem;
+    color: #ffffff; /* White text */
+    margin-bottom: 1.5rem;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(255, 0, 255, 0.7); /* Pink shadow */
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 4 skills in a row */
+    gap: 30px; /* Increased gap */
+    padding: 20px;
+    max-width: 1200px; /* Limit max width */
+    margin: 0 auto; /* Center the grid */
+}
+
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 25px; /* Increased padding */
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    border: 2px solid #FF00FF; /* Thicker fluorescent magenta border */
+    border-radius: 12px; /* Slightly increased border radius */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 180px; /* Set a fixed height */
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.5); /* Increased green glow on hover */
+}
+
+.skill-card img {
+    width: 90px; /* Increased size */
+    height: 90px; /* Increased size */
+    object-fit: contain;
+    margin-bottom: 15px;
+    filter: drop-shadow(0 0 8px rgba(0, 255, 255, 0.7)); /* Increased cyan glow for icons */
+}
+
+.skill-card h3 {
+    margin: 0;
+    font-size: 18px; /* Increased font size */
+    color: #ffffff; /* White text */
+    text-shadow: 1px 1px 2px rgba(255, 0, 255, 0.7); /* Pink shadow */
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 skills per row on smaller screens */
+    }
+}
+
+@media (max-width: 900px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 skills per row on even smaller screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .skills-grid {
+        grid-template-columns: 1fr; /* 1 skill per row on mobile */
+    }
+
+    .skill-card {
+        padding: 20px;
+        height: 160px;
+    }
+
+    .skill-card img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .skill-card h3 {
+        font-size: 16px;
+    }
+}

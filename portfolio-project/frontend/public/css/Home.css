@@ -1,0 +1,223 @@
+/* Home.css */
+
+.home {
+    margin: 0 auto;
+    padding: 1em;
+    font-family: 'Arial', sans-serif;
+    background-color: #000000; /* Black background */
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 4rem;
+    padding: 2rem;
+    background-color: #ffffff1a; /* Semi-transparent white for contrast */
+    border-radius: 10px;
+}
+
+.hero-image img {
+    width: 400px;
+    height: 400px;
+    object-fit:contain;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px #00ff00cc; /* Bright green shadow */
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    color: #ffffff; /* White text */
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px #ff00ffb3; /* Pink shadow */
+}
+
+.hero-text p {
+    font-size: 2.1rem;
+    color: #ffffff; /* White text */
+    margin-bottom: 1.5rem;
+    text-shadow: 1px 1px 2px #00ffffb3; /* Cyan shadow */
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #ff00ffb3; /* Fluorescent magenta */
+    color: #000; /* Black text for contrast */
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #00ff00cc; /* Fluorescent green on hover */
+    color: #000000da;
+}
+
+/* About Section */
+.about-section {
+    margin-bottom: 4rem;
+    padding: 2rem;
+    background-color: #ffffff1a; /* Semi-transparent white for contrast */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 255, 0, 0.8); /* Bright green shadow */
+}
+
+.aboutcontent {
+    color: #ffffff; /* White text */
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 255, 255, 0.7); /* Cyan shadow */
+}
+
+.about .see-more {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #ff00ffb3; /* Fluorescent magenta */
+    color: #000; /* Black text for contrast */
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+.about .see-more:hover {
+    background-color: #00ff00cc; /* Fluorescent green on hover */
+    color: #000000da;
+    text-decoration: none;
+}
+
+/* Responsive Design for About Section */
+@media (max-width: 768px) {
+    .about {
+        padding: 1.5rem;
+    }
+
+    .about h2 {
+        font-size: 2.5rem;
+    }
+
+    .about-content {
+        font-size: 1rem;
+    }
+
+    .about .see-more {
+        font-size: 1rem;
+        padding: 0.6rem 1.2rem;
+    }
+}
+
+
+/* Featured Projects Section */
+.featured-projects {
+    margin-bottom: 4rem;
+}
+
+.featured-projects h2, .skills-section h2, .about-section h2{
+    font-size: 3rem;
+    color: #ffffff; /* White text */
+    margin-bottom: 1.5rem;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(255, 0, 255, 0.7); /* Pink shadow */
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.project-card {
+    background-color: #ffffff1a; /* Semi-transparent white for contrast */
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 255, 0, 0.8); /* Bright green shadow */
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card h3 {
+    font-size: 1.2rem;
+    color: #ffffff; /* White text */
+    margin-bottom: 0.5rem;
+    text-shadow: 1px 1px 2px rgba(255, 0, 255, 0.7); /* Pink shadow */
+}
+
+.project-card p {
+    color: #ffffff; /* White text */
+}
+
+/* Skills Section */
+.skills-section {
+    margin-bottom: 3rem;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills-list li {
+    background-color: #ffffff1a; /* Semi-transparent white for contrast */
+    color: #ffffff; /* White text */
+    padding: 0.8rem 1.3rem;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 2px rgba(255, 0, 255, 0.7); /* Pink shadow */
+}
+
+.see-more {
+    display: block;
+    text-align: center;
+    color: #FF00FF; /* Fluorescent magenta */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-top: 1.5rem;
+}
+
+.see-more:hover {
+    text-decoration: underline;
+    color: #00FF00; /* Fluorescent green */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image img {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 2rem;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
