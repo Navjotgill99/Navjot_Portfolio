@@ -25,40 +25,39 @@ This repository contains the code for Navjot Kaur Gill's personal portfolio webs
   - `src/assets/`: Additional assets like logos
 - `backend/`: Server-side code
   - `server.js`: Express server setup and API routes
-- `.env`: Environment variables (make sure to gitignore this in production)
+- `.env`: Environment variables
 
 ## Setup and Installation
 
 1. Clone the repository
    ```bash
-   git clone https://github.com/your-username/navjot-portfolio.git
-   cd navjot-portfolio
+   git clone https://github.com/Navjotgill99/Navjot_Portfolio.git
+   cd portfolio-project
 
 2. Install dependencies
-  # Install backend dependencies
+  **Install backend dependencies**
   cd backend
   npm install
   
-  # Install frontend dependencies
+  **Install frontend dependencies**
   cd ../frontend
   npm install
 
 3. Set up environment variables
   - Create a `.env` file in the backend directory
   - Add your MongoDB URI and port number:
+  text
   MONGODB_URI=your_mongodb_uri_here
   PORT=8888
 
-
 4. Run the application
-  # Start the backend server
+  **Start the backend server**
   cd backend
   npm start
   
-  # In a new terminal, start the frontend
+  **In a new terminal, start the frontend**
   cd frontend
   npm run dev
-
 
 5. Open http://localhost:5173 in your browser (or the port specified by Vite)
 
@@ -67,7 +66,7 @@ This repository contains the code for Navjot Kaur Gill's personal portfolio webs
 - GET `/api/skills`: Fetch all skills
 
 ## Customization
--  Update the content in the React components to personalize the portfolio
+- Update the content in the React components to personalize the portfolio
 - Modify the CSS files to change the styling and color scheme
 - Add or remove sections by editing the App.jsx file and creating new components
 
