@@ -3,7 +3,7 @@ import '../../public/css/Footer.css';
 import facebookLogo from '../../public/img/facebook-logo.jpg';
 import instaLogo from '../../public/img/instagram-logo.jpg';
 import twitterLogo from '../../public/img/twitter-logo.png';
-import linkedinLogo from '../../public/img/linkedin-logo.png';
+import linkedinLogo from '../../public/img/linkedIn-logo.png';
 import githublogo from '../../public/img/github-logo.png';
 
 function Footer() {

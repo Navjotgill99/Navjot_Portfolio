@@ -1,0 +1,23 @@
+{
+    "framework": "vite",
+    "builds": [
+        {
+            "src": "server.js",
+            "use": "@vercel/node"
+        },
+        {
+            "src": "dist/",
+            "use": "@vercel/static"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/api/(.*)",
+            "dest": "/server.js"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/index.html"
+        }
+    ]
+}
