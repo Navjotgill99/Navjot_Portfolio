@@ -35,27 +35,33 @@ This repository contains the code for Navjot Kaur Gill's personal portfolio webs
    cd portfolio-project
 
 2. Install dependencies
+   
   **Install backend dependencies**
+  
   cd backend
   npm install
   
   **Install frontend dependencies**
+  
   cd ../frontend
   npm install
 
 3. Set up environment variables
   - Create a `.env` file in the backend directory
   - Add your MongoDB URI and port number:
-  text
+
   MONGODB_URI=your_mongodb_uri_here
   PORT=8888
 
 4. Run the application
+
   **Start the backend server**
+  
   cd backend
   npm start
   
   **In a new terminal, start the frontend**
+  
   cd frontend
   npm run dev
 
