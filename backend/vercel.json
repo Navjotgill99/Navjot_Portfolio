@@ -2,22 +2,22 @@
     "framework": "vite",
     "builds": [
         {
-            "src": "server.js",
+            "src": "backend/server.js",
             "use": "@vercel/node"
         },
         {
-            "src": "dist/",
+            "src": "frontend/dist/",
             "use": "@vercel/static"
         }
     ],
     "routes": [
         {
             "src": "/api/(.*)",
-            "dest": "/server.js"
+            "dest": "/backend/server.js"
         },
         {
             "src": "/(.*)",
-            "dest": "/"
+            "dest": "/frontend/dist/index.html"
         }
     ]
 }
