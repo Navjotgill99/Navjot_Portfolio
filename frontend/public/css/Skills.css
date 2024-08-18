@@ -1,7 +1,6 @@
-/* Skills.css */
 .skills {
     background-color: #000000; /* Black background */
-    padding: 2rem 0; /* Add some vertical padding */
+    padding: 2rem 0; /* vertical padding */
 }
 
 .skills h2 {
@@ -14,8 +13,8 @@
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 4 skills in a row */
-    gap: 30px; /* Increased gap */
+    grid-template-columns: repeat(3, 1fr); /* 3 skills in a row */
+    gap: 30px;
     padding: 20px;
     max-width: 1200px; /* Limit max width */
     margin: 0 auto; /* Center the grid */
@@ -27,31 +26,31 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 25px; /* Increased padding */
+    padding: 25px;
     background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
-    border: 2px solid #FF00FF; /* Thicker fluorescent magenta border */
-    border-radius: 12px; /* Slightly increased border radius */
+    border: 2px solid #FF00FF; /* fluorescent magenta border */
+    border-radius: 12px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     height: 180px; /* Set a fixed height */
 }
 
 .skill-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 0 20px rgba(0, 255, 0, 0.5); /* Increased green glow on hover */
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
 }
 
 .skill-card img {
-    width: 90px; /* Increased size */
-    height: 90px; /* Increased size */
+    width: 90px; 
+    height: 90px; 
     object-fit: contain;
     margin-bottom: 15px;
-    filter: drop-shadow(0 0 8px rgba(0, 255, 255, 0.7)); /* Increased cyan glow for icons */
+    filter: drop-shadow(0 0 8px rgba(0, 255, 255, 0.7)); /* cyan glow for icons */
 }
 
 .skill-card h3 {
     margin: 0;
-    font-size: 18px; /* Increased font size */
-    color: #ffffff; /* White text */
+    font-size: 18px; 
+    color: #ffffff; 
     text-shadow: 1px 1px 2px rgba(255, 0, 255, 0.7); /* Pink shadow */
 }
 

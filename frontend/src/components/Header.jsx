@@ -1,4 +1,3 @@
-// frontend/src/components/Header.js
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../../public/css/Header.css';

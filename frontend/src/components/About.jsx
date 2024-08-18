@@ -1,4 +1,3 @@
-// frontend/src/components/About.jsx
 import React, { useEffect, useState } from 'react';
 import '../../public/css/About.css';
 

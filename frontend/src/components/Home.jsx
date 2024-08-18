@@ -1,4 +1,3 @@
-// frontend/src/components/Home.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../../public/css/Home.css'; // Import the CSS file
@@ -18,7 +17,7 @@ function Home() {
                     <h1>Navjot Kaur Gill</h1>
                     <p>Web Developer & Designer</p>
                     <p>I create custom websites to help businesses do better online.</p>
-                    <Link to="/contact" className="cta-button">Hire Me</Link>
+                    <Link to="/contact" className="hire-button">Hire Me</Link>
                 </div>
             </section>
             <section className="about-section">

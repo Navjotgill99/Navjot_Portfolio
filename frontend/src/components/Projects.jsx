@@ -1,4 +1,3 @@
-// frontend/src/components/Projects.jsx
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import '../../public/css/Projects.css';

@@ -1,4 +1,3 @@
-// frontend/src/components/Skills.jsx
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import '../../public/css/Skills.css';
@@ -30,7 +29,7 @@ function Skills({ limit, showHeading = true }) {
 
     const displayedSkills = limit ? skills.slice(0, limit) : skills;
 
-    
+
     return (
         <section id="skills" className="skills">
             {showHeading && <h2>My Skills</h2>}
